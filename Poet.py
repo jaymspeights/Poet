@@ -145,7 +145,6 @@ class Interpreter(object):
                 return self._syscall()
 
             self.advance()
-            return Token(NOOP, None)
 
         return Token(EOF, EOF)
 
@@ -221,7 +220,6 @@ class Interpreter(object):
                 self.skip_block()
 
     def skip_block(self):
-        self.eat(CONTROL, "BLOCK")
         while (self.current_token.value is not "BLOCK"):
             if self.current_token.value is "IF" or self.current_token.value is "WHILE":
                 self.eat(CONTROL)
