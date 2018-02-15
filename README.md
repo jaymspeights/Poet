@@ -1,9 +1,26 @@
 # Poet
 An interpreted programming language and it's interpreter in Python
 
-In poet, the characters you use don't matter. All that matters is the length of words, where a word is any string of symbols excluding any whitespace characters. For example, the program to print the numbers
-1 - 100 looks like:
+In poet, the characters you use don't matter. All that matters is the length of words, where a word is any string of symbols excluding any whitespace characters.
 
+For example, the program to print the numbers 1 - 100 looks like:
+
+```
+1234 12 12345 1 123 1
+12 12345 123456 12345 12345 1 123 123 123456789 123456789
+  1234567 12345 1234 12 12345 1 1234 123 12345 1 123 12 1
+12 123
+```
+Or, it could look like this:
+```
+____ __ _____ _ ___ _
+
+__ _____ ______ _____ _____ _ ___ ___ _________ _________
+  _______ _____ ____ __ _____ _ ____ ___ _____ _ ___ __ _
+
+
+      __ ___
+```
 
 ## Syntax
 Program     -> [...Statement]
@@ -64,7 +81,7 @@ The three lines above all represent the symbol made up of 4 2
 
 
 ### Numbers
-*The second number represents the amount of digits minus one and the following numbers represent the values of the digits modulus ten. For example, 3 4 2 1 10 represents the number 210. 3 means number, 4 means (4-1) 3 digits, and then the following 2, 1, and 0 are used to construct the number 210. We can construct the number 0 with the symbol 3 1*
+*The second number represents the amount of digits minus one and the following numbers represent the values of the digits modulus ten. For example, 3 4 2 1 10 represents the number 210. 3 means number, 4 means (4-1) 3 digits, and then the following 2, 1, and 10 are used to construct the number 210 (10 mod 10 is 0). We can construct the number 0 with the symbol 3 1*
 
 3 # ...# -> number -> (number: 3) (digits: #-1) [...value: #%10]
 
