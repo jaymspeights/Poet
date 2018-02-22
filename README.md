@@ -1,5 +1,4 @@
 # Poet
-An interpreted programming language and it's interpreter in Python
 
 In poet, the characters you use don't matter. All that matters is the length of words, where a word is any string of symbols excluding any whitespace characters.
 
