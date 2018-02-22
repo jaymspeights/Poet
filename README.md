@@ -33,7 +33,7 @@ Expression  -> Operation | number | variable
 
 Control     -> {if|while} + Expression + Block
 
-Block       -> block_marker + [...Statement] + block_marker
+Block       -> [...Statement] + block_marker
 
 Syscall     -> call + [,Expression]
 
@@ -77,7 +77,7 @@ The three lines above all represent the symbol made up of 4 2
 
 
 #### Block
-2 3 -> block_marker -> (:block_marker) [...code: Statement] (:block_marker)
+2 3 -> block_marker -> [...code: Statement] (:block_marker)
 
 
 ### Numbers
